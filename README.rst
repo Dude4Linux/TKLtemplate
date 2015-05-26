@@ -53,7 +53,8 @@ Replace template README.rst
 
 ::
 
-        mv README.app README.rst
+        git rm README.rst
+        git mv README.app README.rst
 
 Edit README.rst and changelog
 '''''''''''''''''''''''''''''
