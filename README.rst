@@ -45,6 +45,8 @@ To copy the TKLtemplate, we'll add it as an upstream source.
         git remote add upstream https://github.com/Dude4Linux/TKLtemplate.git
         git fetch upstream
         git merge upstream/master
+        git branch --unset-upstream
+        git remote remove upstream
 
 Replace template README.rst
 '''''''''''''''''''''''''''
