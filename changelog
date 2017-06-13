@@ -1,29 +1,20 @@
- * Appliance name
-   - turnkey-#MyApp#
- **************************************
+turnkey-#MyApp#-14.2 (1) turnkey; urgency=low
 
- * Changes start here *****************
- * Initial release of #MyApp# for TKLdev
+ * Initial release of #MyApp# for TurnKey GNU/Linux
 
  * #MyApp# Appliance:
    * Description or Purpose
-   - Briefly describe what the appliance does
+.. Briefly describe what the appliance does
+   -
+   -
 
-   * List of appliances included in plan/main
-   - turnkey-core
-   - 
-   - 
-   * Additional Debian packages included in plan/main
-   - 
-   - 
-   - Any special notes about appliance
+.. Any special notes about appliance
    - 
    - 
 
- * Please refer to turnkey-core's changelog for changes common to all
-   appliances, as well as the following git logs:
+ * Note: Please refer to turnkey-core's changelog for changes common to all
+   appliances. Here we only describe changes specific to this appliance.
     
-   - https://github.com/turnkeylinux/common
-   - https://github.com/turnkeylinux-apps/core
-
--- #Author# <#email#>  #date#
+.. Maintainer's full name, e-mail, and date in debchange format
+.. e.g. Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 05 Feb 2016 18:11:26 +1100
+-- #Maintainer# <#email#>  #date#
