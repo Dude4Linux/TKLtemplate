@@ -24,9 +24,11 @@ Note: GitHub will offer to create a README.rst file. Leave the option unchecked.
 
 Clone the repository
 ''''''''''''''''''''
-To be able to work on the project you'll need to clone it::
+To be able to work on the project you'll need to clone it.
 
-On your TKLdev workstation, enter
+On your TKLdev workstation, enter:
+
+::
 
         cd projects    
         git clone git@github.com:USERNAME/PROJECTNAME.git    
@@ -38,14 +40,21 @@ Fetch and Merge the TKLtemplate
 '''''''''''''''''''''''''''''''
 To copy the TKLtemplate, we'll add it as an upstream source.
 
+::
+
         git remote add upstream https://github.com/Dude4Linux/TKLtemplate.git
         git fetch upstream
         git merge upstream/master
+        git branch --unset-upstream
+        git remote remove upstream
 
 Replace template README.rst
 '''''''''''''''''''''''''''
 
-        mv README.app README.rst
+::
+
+        git rm README.rst
+        git mv README.app README.rst
 
 Edit README.rst and changelog
 '''''''''''''''''''''''''''''
@@ -53,7 +62,9 @@ Edit README.rst and changelog
 Edit the files, replacing all references to #MyApp#, #Author#, #email# and #date# with the appropriate values.
 
 Commit and Push the changes
-''''''''''''''''''
+'''''''''''''''''''''''''''
+
+::
 
         git add .
         git commit -m "initial commit"
