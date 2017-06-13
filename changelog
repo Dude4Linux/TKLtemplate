@@ -17,4 +17,5 @@ turnkey-#MyApp#-14.2 (1) turnkey; urgency=low
     
 .. Maintainer's full name, e-mail, and date in debchange format
 .. e.g. Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 05 Feb 2016 18:11:26 +1100
--- #Maintainer# <#email#>  #date#
+ -- #Maintainer# <#email#>  #date#
+
